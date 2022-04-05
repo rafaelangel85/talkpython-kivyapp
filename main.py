@@ -160,10 +160,10 @@ class MyDataStore(object):
         try:
             feeds = self.data_store.get('feeds')[self.title]
             if self.debug:
-                print '[success] found existing feeds', feeds
+                print('[success] found existing feeds', feeds)
         except:
             if self.debug:
-                print '[info] no feeds, adding default', self.title, self.url
+                print('[info] no feeds, adding default', self.title, self.url)
                 
             self.data_store.put('feeds', 
                                 status= self.status, 
